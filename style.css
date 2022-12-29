@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: #2b1055;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header ul {
+    display: flex;
+    color: #fff;
+}
+
+header ul li {
+    list-style: none;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+header ul li:hover,
+#active {
+    background-color: #fff;
+    color: #2b1055;
+    transition: 0.6s;
+}
+
+section::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#home .moon {
+    /* object-fit: fill; */
+    mix-blend-mode: screen;
+}
+
+#home .mountains_back {
+    z-index: -10;
+}
+
+#home .mountains_front {
+    z-index: 100;
+}
+
+#home .text {
+    position: absolute;
+    color: #fff;
+    font-size: 3.5em;
+    z-index: 1000;
+}
+
+#home .btn {
+    text-decoration: none;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #2b1055;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    transform: translateY(100px);
+}
+
+#details {
+    position: relative;
+    width: 100%;
+    background-color: #1c0522;
+    color: #fff;
+    padding: 100px 100px;
+    line-height: 2;
+}
+
+#details h2 {
+    font-size: 3.25em;
+    margin-bottom: 50px;
+}
+
+#details p{
+    font-size: 1em;
+}
